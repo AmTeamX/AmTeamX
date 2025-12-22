@@ -7,7 +7,7 @@ I am a software engineer passionate about building scalable systems and solving 
 
 ### 🚀 Key Highlights
 * **🏆 Award Winning:** Honorable Mention at NSC 2025 and 1st Prize at AI Engineering Hackathon 2024.
-* **📱 Production Experience:** Developed and deployed **BONDUP** to the Google Play Store.
+* **📱 Production Experience:** Developed and deployed **BONDUP** to the Google Play Store and Apple Store.
 * **🔬 Researcher:** Junior Research Assistant at Biomedical Informatics Research Lab, building end-to-end AI pipelines.
 * **👥 Leader:** Agile Scrum Leader at MUICT DEV-CLUB, managing iterative development and on-time delivery.
 
