@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Pannawit Krutnak (Team)
 
-**Full-Stack Developer & AI/ML Engineer** | *3rd Year ICT Student at Mahidol University*
+**Full-Stack Developer** | *3rd Year ICT Student at Mahidol University*
 
 I am a software engineer passionate about building high-performance systems and solving real-world problems through **Clean Architecture** and **AI**. I specialize in mobile and web development with experience deploying production-ready applications to global markets.
 
