@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local portrait inputs/outputs (personal + regenerated)
+source-photo.*
+profile.png
+source-prepped.png
+
+# rembg model cache
+.cache/
+
+# onnxruntime telemetry artifact (can appear when run sandboxed)
+:memory:.ses

@@ -1,49 +1,23 @@
-# 👋 Hi, I'm Pannawit Krutnak (Team)
+<div align="center">
 
-**Full-Stack Developer** | *3rd Year ICT Student at Mahidol University*
+<h3><code>team@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" alt="Contribution graph" />
 
-I am a software engineer passionate about building high-performance systems and solving real-world problems through **Clean Architecture** and **AI**. I specialize in mobile and web development with experience deploying production-ready applications to global markets.
+<br><br>
 
----
+<h3><code>team@github ~ $ whoami</code></h3>
+<table>
+  <tr>
+    <td valign="top"><img src="./avi-ascii.svg" width="370" alt="ASCII portrait" /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="Profile info card" /></td>
+  </tr>
+</table>
 
-### 🚀 Key Highlights
+<br>
 
-* **🏆 Award Winning:** Honorable Mention at **NSC 2025** and 1st Prize at **AI Engineering Hackathon 2024**.
-* **📱 Production Experience:** Developed and deployed **[BONDUP](https://play.google.com/store/apps/details?id=com.bondupmvs.com)** to the Google Play Store and Apple Store.
-* **🔬 Researcher:** Junior Research Assistant at **Biomedical Informatics Research Lab**, building end-to-end AI pipelines.
-* **🦀 Current Focus:** Deep-diving into **Rust** for high-performance, memory-safe backend services.
+Full-Stack Developer · 3rd Year ICT @ Mahidol University
 
----
-
-### 💻 Tech Stack
-
-#### **Languages**
-<p align="left">
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-</p>
-
-#### **Frontend & Mobile**
-<p align="left">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-</p>
-
-#### **Backend & Infrastructure**
-<p align="left">
-  <img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" />
-  <img src="https://img.shields.io/badge/Elysia-7111F1?style=flat-square&logo=elysia&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" />
-</p>
+</div>
 
 ---
 
@@ -57,21 +31,8 @@ I am a software engineer passionate about building high-performance systems and 
 
 ---
 
-### 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AmTeamX&show_icons=true&theme=radical&rank_icon=github" alt="Pann's GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmTeamX&layout=compact&theme=radical" alt="Top Langs" />
-</p>
-
----
-
 ### 📫 Let's Connect!
 
 * 🌐 **Portfolio:** [pwteam.site](https://www.pwteam.site)
 * 💼 **LinkedIn:** [Pannawit Krutnak](https://www.linkedin.com/in/pannawit-krutnak-9728562a8/)
 * 📧 **Email:** [amteamxmail@gmail.com](mailto:amteamxmail@gmail.com)
-
-<p align="center">
-  <em>"Passionate about building solutions that solve real-world problems."</em>
-</p>
