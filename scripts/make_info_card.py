@@ -25,12 +25,12 @@ HOST = "team@github"
 
 # Each row is (label, value). Empty labels continue the previous entry.
 ROWS = [
-    ("Now", "Full-Stack Developer"),
-    ("Prev", "ICT @ Mahidol University"),
-    ("Stack", "Rust · Flutter · Next.js"),
-    ("", "Python · Docker · Supabase"),
+    ("Now", "Software Engineer AI Intern @ Omise"),
+    ("Prev", "Full-Stack Developer"),
+    ("Stack", "Python · Golang · Flutter"),
+    ("", "Next.js · TypeScript · SQL"),
     ("Highlights", "NSC 2025 Honorable Mention"),
-    ("", "AI Hackathon 2024 Winner"),
+    ("", "AI Hackathon 2024 1st Prize"),
     ("", "BONDUP in production"),
     ("", "Research @ Biomedical Informatics"),
 ]
@@ -43,7 +43,7 @@ LABEL_COLORS = {
 }
 
 # --- Layout --------------------------------------------------------------
-WIDTH = 480
+WIDTH = 500
 TITLE_H = 44
 PAD_X = 26
 LABEL_W = 118
