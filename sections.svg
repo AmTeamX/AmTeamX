@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1190" role="img" aria-label="Profile sections">
+<style>.l{animation:fade-slide 0.4s ease both}@keyframes fade-slide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px}</style>
+<defs><clipPath id="clip-0"><rect x="0" y="0" width="860" height="410" rx="12"/></clipPath></defs>
+<g clip-path="url(#clip-0)">
+<rect x="0" y="0" width="860" height="410" fill="#0d1117" class="l" style="animation-delay:0.12s"/>
+<rect x="0" y="0" width="860" height="40" fill="#161b22" class="l" style="animation-delay:0.12s"/>
+<circle cx="24" cy="20" r="6" fill="#ff5f56" class="l" style="animation-delay:0.12s"/>
+<circle cx="44" cy="20" r="6" fill="#ffbd2e" class="l" style="animation-delay:0.12s"/>
+<circle cx="64" cy="20" r="6" fill="#27c93f" class="l" style="animation-delay:0.12s"/>
+<text x="430" y="25" text-anchor="middle" fill="#e6edf3" class="l" style="animation-delay:0.15s">team@github ~ $ cat experience.md</text>
+</g>
+<rect x="0.5" y="0.5" width="859" height="409" rx="12" fill="none" stroke="#30363d" class="l" style="animation-delay:0.12s"/>
+<text x="30" y="69" fill="#e6edf3" class="l" style="animation-delay:0.20s">▸ Software Engineer AI Intern</text>
+<text x="30" y="91" fill="#8b949e" class="l" style="animation-delay:0.24s">  Omise (Opn Payments) · Apr 2026 – Present</text>
+<text x="30" y="113" fill="#c9d1d9" class="l" style="animation-delay:0.29s">  • Python Risk Score Engine for automated underwriting; KYC AI solutions; PoCs</text>
+<text x="30" y="135" fill="#c9d1d9" class="l" style="animation-delay:0.34s">  • in Next.js, Golang, JS</text>
+<text x="30" y="165" fill="#e6edf3" class="l" style="animation-delay:0.42s">▸ Backend Developer Intern / Part-time</text>
+<text x="30" y="187" fill="#8b949e" class="l" style="animation-delay:0.47s">  Tech Horizon (Japan Fintech) · Jan 2026 – Mar 2026</text>
+<text x="30" y="209" fill="#c9d1d9" class="l" style="animation-delay:0.52s">  • Japanese e-wallet with BNPL in PHP; major payment gateway integrations</text>
+<text x="30" y="239" fill="#e6edf3" class="l" style="animation-delay:0.60s">▸ Lab Assistant</text>
+<text x="30" y="261" fill="#8b949e" class="l" style="animation-delay:0.65s">  Biomedical Informatics Research Lab · Aug 2024 – Present</text>
+<text x="30" y="283" fill="#c9d1d9" class="l" style="animation-delay:0.70s">  • End-to-end AI pipelines (TensorFlow, PyTorch) for Full HD 240fps video</text>
+<text x="30" y="305" fill="#c9d1d9" class="l" style="animation-delay:0.74s">  • research</text>
+<text x="30" y="335" fill="#e6edf3" class="l" style="animation-delay:0.83s">▸ Software Engineering Intern</text>
+<text x="30" y="357" fill="#8b949e" class="l" style="animation-delay:0.88s">  CourseSquare · 2024</text>
+<text x="30" y="379" fill="#c9d1d9" class="l" style="animation-delay:0.92s">  • Maintained and enhanced educational platform web apps</text>
+<defs><clipPath id="clip-1"><rect x="0" y="430" width="860" height="366" rx="12"/></clipPath></defs>
+<g clip-path="url(#clip-1)">
+<rect x="0" y="430" width="860" height="366" fill="#0d1117" class="l" style="animation-delay:1.25s"/>
+<rect x="0" y="430" width="860" height="40" fill="#161b22" class="l" style="animation-delay:1.25s"/>
+<circle cx="24" cy="450" r="6" fill="#ff5f56" class="l" style="animation-delay:1.25s"/>
+<circle cx="44" cy="450" r="6" fill="#ffbd2e" class="l" style="animation-delay:1.25s"/>
+<circle cx="64" cy="450" r="6" fill="#27c93f" class="l" style="animation-delay:1.25s"/>
+<text x="430" y="455" text-anchor="middle" fill="#e6edf3" class="l" style="animation-delay:1.28s">team@github ~ $ cat projects.md</text>
+</g>
+<rect x="0.5" y="430.5" width="859" height="365" rx="12" fill="none" stroke="#30363d" class="l" style="animation-delay:1.25s"/>
+<text x="30" y="499" fill="#79c0ff" class="l" style="animation-delay:1.33s">BONDUP</text>
+<text x="30" y="521" fill="#c9d1d9" class="l" style="animation-delay:1.37s">  Real-time community &amp; activity app (Lead Mobile Developer)</text>
+<text x="30" y="543" fill="#8b949e" class="l" style="animation-delay:1.42s">  Flutter · Clean Architecture</text>
+<text x="30" y="573" fill="#79c0ff" class="l" style="animation-delay:1.51s">BlinkDx</text>
+<text x="30" y="595" fill="#c9d1d9" class="l" style="animation-delay:1.55s">  AI blink anomaly detection (95% accuracy)</text>
+<text x="30" y="617" fill="#8b949e" class="l" style="animation-delay:1.60s">  Python · PyTorch · Computer Vision · NSC 2025 Honorable Mention</text>
+<text x="30" y="647" fill="#79c0ff" class="l" style="animation-delay:1.69s">AI Restricted Area Protection</text>
+<text x="30" y="669" fill="#c9d1d9" class="l" style="animation-delay:1.73s">  Bird-detection surveillance system</text>
+<text x="30" y="691" fill="#8b949e" class="l" style="animation-delay:1.78s">  Python · Computer Vision · 1st Prize AI Hackathon 2024</text>
+<text x="30" y="721" fill="#79c0ff" class="l" style="animation-delay:1.87s">MUICT Open House</text>
+<text x="30" y="743" fill="#c9d1d9" class="l" style="animation-delay:1.91s">  Mobile-first registration for 200+ concurrent users</text>
+<text x="30" y="765" fill="#8b949e" class="l" style="animation-delay:1.96s">  Next.js · Express.js · MongoDB</text>
+<defs><clipPath id="clip-2"><rect x="0" y="816" width="860" height="188" rx="12"/></clipPath></defs>
+<g clip-path="url(#clip-2)">
+<rect x="0" y="816" width="860" height="188" fill="#0d1117" class="l" style="animation-delay:2.28s"/>
+<rect x="0" y="816" width="860" height="40" fill="#161b22" class="l" style="animation-delay:2.28s"/>
+<circle cx="24" cy="836" r="6" fill="#ff5f56" class="l" style="animation-delay:2.28s"/>
+<circle cx="44" cy="836" r="6" fill="#ffbd2e" class="l" style="animation-delay:2.28s"/>
+<circle cx="64" cy="836" r="6" fill="#27c93f" class="l" style="animation-delay:2.28s"/>
+<text x="430" y="841" text-anchor="middle" fill="#e6edf3" class="l" style="animation-delay:2.31s">team@github ~ $ cat skills.txt</text>
+</g>
+<rect x="0.5" y="816.5" width="859" height="187" rx="12" fill="none" stroke="#30363d" class="l" style="animation-delay:2.28s"/>
+<text x="30" y="885" fill="#79c0ff" class="l" style="animation-delay:2.36s">Languages:</text>
+<text x="148" y="885" fill="#c9d1d9" class="l" style="animation-delay:2.36s">Python, C/C++, Golang, JavaScript, TypeScript, Dart, PHP, SQL</text>
+<text x="30" y="907" fill="#79c0ff" class="l" style="animation-delay:2.41s">Frontend:</text>
+<text x="148" y="907" fill="#c9d1d9" class="l" style="animation-delay:2.41s">Flutter, Next.js, React, HTML/CSS, Tailwind CSS</text>
+<text x="30" y="929" fill="#79c0ff" class="l" style="animation-delay:2.45s">Backend:</text>
+<text x="148" y="929" fill="#c9d1d9" class="l" style="animation-delay:2.45s">Node.js, Express.js, PostgreSQL, MongoDB, Redis, Firebase, RESTful APIs</text>
+<text x="30" y="951" fill="#79c0ff" class="l" style="animation-delay:2.50s">AI/ML:</text>
+<text x="148" y="951" fill="#c9d1d9" class="l" style="animation-delay:2.50s">TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, Computer Vision</text>
+<text x="30" y="973" fill="#79c0ff" class="l" style="animation-delay:2.54s">DevOps:</text>
+<text x="148" y="973" fill="#c9d1d9" class="l" style="animation-delay:2.54s">Git, Docker, Linux, CI/CD, Agile/Scrum, UML</text>
+<defs><clipPath id="clip-3"><rect x="0" y="1024" width="860" height="166" rx="12"/></clipPath></defs>
+<g clip-path="url(#clip-3)">
+<rect x="0" y="1024" width="860" height="166" fill="#0d1117" class="l" style="animation-delay:2.87s"/>
+<rect x="0" y="1024" width="860" height="40" fill="#161b22" class="l" style="animation-delay:2.87s"/>
+<circle cx="24" cy="1044" r="6" fill="#ff5f56" class="l" style="animation-delay:2.87s"/>
+<circle cx="44" cy="1044" r="6" fill="#ffbd2e" class="l" style="animation-delay:2.87s"/>
+<circle cx="64" cy="1044" r="6" fill="#27c93f" class="l" style="animation-delay:2.87s"/>
+<text x="430" y="1049" text-anchor="middle" fill="#e6edf3" class="l" style="animation-delay:2.90s">team@github ~ $ ./contact.sh</text>
+</g>
+<rect x="0.5" y="1024.5" width="859" height="165" rx="12" fill="none" stroke="#30363d" class="l" style="animation-delay:2.87s"/>
+<text x="30" y="1093" fill="#79c0ff" class="l" style="animation-delay:2.95s">Portfolio</text>
+<text x="148" y="1093" fill="#c9d1d9" class="l" style="animation-delay:2.95s">→ profile.teampk.site</text>
+<text x="30" y="1115" fill="#79c0ff" class="l" style="animation-delay:2.99s">LinkedIn</text>
+<text x="148" y="1115" fill="#c9d1d9" class="l" style="animation-delay:2.99s">→ linkedin.com/in/pannawit-krutnak-9728562a8</text>
+<text x="30" y="1137" fill="#79c0ff" class="l" style="animation-delay:3.04s">Email</text>
+<text x="148" y="1137" fill="#c9d1d9" class="l" style="animation-delay:3.04s">→ amteamxmail@gmail.com</text>
+<text x="30" y="1159" fill="#79c0ff" class="l" style="animation-delay:3.08s">GitHub</text>
+<text x="148" y="1159" fill="#c9d1d9" class="l" style="animation-delay:3.08s">→ github.com/AmTeamX</text>
+</svg>
