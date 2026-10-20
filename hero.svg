@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 268" role="img" aria-label="whoami profile card">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 860 308" role="img" aria-label="whoami profile card">
 <style>.l{animation:fade-slide 0.4s ease both}@keyframes fade-slide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
-<defs><clipPath id="win"><rect width="860" height="268" rx="12"/></clipPath></defs>
+<defs><clipPath id="win"><rect width="860" height="308" rx="12"/></clipPath><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39d353" stop-opacity="0"/><stop offset="0.5" stop-color="#39d353" stop-opacity="0.45"/><stop offset="1" stop-color="#39d353" stop-opacity="0"/></linearGradient></defs>
 <g clip-path="url(#win)">
-<rect width="860" height="268" fill="#0d1117"/>
-<rect width="860" height="40" fill="#161b22"/>
+<rect width="860" height="308" fill="#121822"/>
+<rect width="860" height="40" fill="#1c2431"/>
 <circle cx="24" cy="20" r="6" fill="#ff5f56"/>
 <circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
 <circle cx="64" cy="20" r="6" fill="#27c93f"/>
 <text x="430" y="25" text-anchor="middle" fill="#e6edf3" font-size="16">team@github ~ $ whoami</text>
 </g>
-<rect x="0.5" y="0.5" width="859" height="267" rx="12" fill="none" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="859" height="307" rx="12" fill="none" stroke="#3d444d"/>
 <text x="30" y="92" font-size="38" fill="#e6edf3" class="l" style="animation-delay:0.16s">PWTeam</text>
-<rect x="176" y="62" width="16" height="38" fill="#39d353"><animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></rect><text x="30" y="127" font-size="15" fill="#79c0ff" class="l" style="animation-delay:0.26s">@AmTeamX · &quot;PWTeam&quot;</text>
-<text x="30" y="151" font-size="15" fill="#c9d1d9" class="l" style="animation-delay:0.31s">Software Engineer AI Intern @ Omise · Full-Stack Developer</text>
-<text x="30" y="173" font-size="15" fill="#8b949e" class="l" style="animation-delay:0.36s">ICT @ Mahidol University</text>
-<rect x="30" y="190" width="116" height="26" rx="13" fill="#161b22" stroke="#30363d"/><circle cx="44" cy="203" r="4.5" fill="#3178c6"/><text x="56" y="199" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.41s">TypeScript</text>
-<rect x="156" y="190" width="116" height="26" rx="13" fill="#161b22" stroke="#30363d"/><circle cx="170" cy="203" r="4.5" fill="#f1e05a"/><text x="182" y="199" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.46s">JavaScript</text>
-<rect x="282" y="190" width="69" height="26" rx="13" fill="#161b22" stroke="#30363d"/><circle cx="296" cy="203" r="4.5" fill="#00B4AB"/><text x="308" y="199" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.51s">Dart</text>
-<rect x="361" y="190" width="84" height="26" rx="13" fill="#161b22" stroke="#30363d"/><circle cx="375" cy="203" r="4.5" fill="#3572A5"/><text x="387" y="199" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.56s">Python</text>
-<rect x="455" y="190" width="53" height="26" rx="13" fill="#161b22" stroke="#30363d"/><circle cx="469" cy="203" r="4.5" fill="#00ADD8"/><text x="481" y="199" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.61s">Go</text>
-<text x="30" y="234" font-size="14" fill="#8b949e" class="l" style="animation-delay:0.66s">22 public repos · 733 contributions last year · 144 active days · ★ 0</text>
+<rect x="176" y="62" width="16" height="38" fill="#39d353"><animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></rect><rect x="30" y="116" width="800" height="120" rx="10" fill="#0d1117" stroke="#3d444d"/><text x="48" y="139" font-size="15" fill="#79c0ff" class="l" style="animation-delay:0.26s">@AmTeamX · &quot;PWTeam&quot;</text>
+<text x="48" y="163" font-size="15" fill="#c9d1d9" class="l" style="animation-delay:0.31s">Software Engineer AI Intern @ Omise · Full-Stack Developer</text>
+<text x="48" y="187" font-size="15" fill="#8b949e" class="l" style="animation-delay:0.36s">ICT @ Mahidol University</text>
+<text x="48" y="210" font-size="14" fill="#8b949e" class="l" style="animation-delay:0.41s">22 public repos · 734 contributions last year · 144 active days · ★ 0</text>
+<rect x="30" y="250" width="116" height="26" rx="13" fill="#1c2431" stroke="#3d444d"/><circle cx="44" cy="263" r="4.5" fill="#3178c6"/><text x="56" y="259" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.46s">TypeScript</text>
+<rect x="156" y="250" width="116" height="26" rx="13" fill="#1c2431" stroke="#3d444d"/><circle cx="170" cy="263" r="4.5" fill="#f1e05a"/><text x="182" y="259" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.51s">JavaScript</text>
+<rect x="282" y="250" width="69" height="26" rx="13" fill="#1c2431" stroke="#3d444d"/><circle cx="296" cy="263" r="4.5" fill="#00B4AB"/><text x="308" y="259" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.56s">Dart</text>
+<rect x="361" y="250" width="84" height="26" rx="13" fill="#1c2431" stroke="#3d444d"/><circle cx="375" cy="263" r="4.5" fill="#3572A5"/><text x="387" y="259" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.61s">Python</text>
+<rect x="455" y="250" width="53" height="26" rx="13" fill="#1c2431" stroke="#3d444d"/><circle cx="469" cy="263" r="4.5" fill="#00ADD8"/><text x="481" y="259" font-size="13" fill="#c9d1d9" class="l" style="animation-delay:0.66s">Go</text>
 </svg>

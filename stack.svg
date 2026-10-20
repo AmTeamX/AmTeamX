@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 332" role="img" aria-label="cat stack.txt --sort=bytes profile card">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 860 332" role="img" aria-label="cat stack.txt --sort=bytes profile card">
 <style>.l{animation:fade-slide 0.4s ease both}@keyframes fade-slide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
-<defs><clipPath id="win"><rect width="860" height="332" rx="12"/></clipPath></defs>
+<defs><clipPath id="win"><rect width="860" height="332" rx="12"/></clipPath><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39d353" stop-opacity="0"/><stop offset="0.5" stop-color="#39d353" stop-opacity="0.45"/><stop offset="1" stop-color="#39d353" stop-opacity="0"/></linearGradient></defs>
 <g clip-path="url(#win)">
-<rect width="860" height="332" fill="#0d1117"/>
-<rect width="860" height="40" fill="#161b22"/>
+<rect width="860" height="332" fill="#121822"/>
+<rect width="860" height="40" fill="#1c2431"/>
 <circle cx="24" cy="20" r="6" fill="#ff5f56"/>
 <circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
 <circle cx="64" cy="20" r="6" fill="#27c93f"/>
 <text x="430" y="25" text-anchor="middle" fill="#e6edf3" font-size="16">team@github ~ $ cat stack.txt --sort=bytes</text>
 </g>
-<rect x="0.5" y="0.5" width="859" height="331" rx="12" fill="none" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="859" height="331" rx="12" fill="none" stroke="#3d444d"/>
 <text x="30" y="73" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.16s">repository-weighted across 22 public repositories · live from the GitHub API</text>
 <circle cx="36" cy="98" r="5" fill="#3178c6" class="l" style="animation-delay:0.21s"/>
 <text x="50" y="103" fill="#c9d1d9" class="l" style="animation-delay:0.21s">TypeScript</text>
-<rect x="210" y="92" width="584" height="8" rx="4.0" fill="#21262d"/><rect x="210" y="92" width="0" height="8" rx="4.0" fill="#3178c6"><animate attributeName="width" from="0" to="310" begin="0.21s" dur="0.7s" fill="freeze"/></rect><text x="830" y="103" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.23s">53%</text>
+<rect x="210" y="92" width="584" height="8" rx="4.0" fill="#2a3140"/><rect x="210" y="92" width="0" height="8" rx="4.0" fill="#3178c6"><animate attributeName="width" from="0" to="310" begin="0.21s" dur="0.7s" fill="freeze"/></rect><text x="830" y="103" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.23s">53%</text>
 <circle cx="36" cy="134" r="5" fill="#f1e05a" class="l" style="animation-delay:0.26s"/>
 <text x="50" y="139" fill="#c9d1d9" class="l" style="animation-delay:0.26s">JavaScript</text>
-<rect x="210" y="128" width="584" height="8" rx="4.0" fill="#21262d"/><rect x="210" y="128" width="0" height="8" rx="4.0" fill="#f1e05a"><animate attributeName="width" from="0" to="70" begin="0.26s" dur="0.7s" fill="freeze"/></rect><text x="830" y="139" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.28s">12%</text>
+<rect x="210" y="128" width="584" height="8" rx="4.0" fill="#2a3140"/><rect x="210" y="128" width="0" height="8" rx="4.0" fill="#f1e05a"><animate attributeName="width" from="0" to="70" begin="0.26s" dur="0.7s" fill="freeze"/></rect><text x="830" y="139" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.28s">12%</text>
 <circle cx="36" cy="170" r="5" fill="#00B4AB" class="l" style="animation-delay:0.31s"/>
 <text x="50" y="175" fill="#c9d1d9" class="l" style="animation-delay:0.31s">Dart</text>
-<rect x="210" y="164" width="584" height="8" rx="4.0" fill="#21262d"/><rect x="210" y="164" width="0" height="8" rx="4.0" fill="#00B4AB"><animate attributeName="width" from="0" to="70" begin="0.31s" dur="0.7s" fill="freeze"/></rect><text x="830" y="175" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.33s">12%</text>
+<rect x="210" y="164" width="584" height="8" rx="4.0" fill="#2a3140"/><rect x="210" y="164" width="0" height="8" rx="4.0" fill="#00B4AB"><animate attributeName="width" from="0" to="70" begin="0.31s" dur="0.7s" fill="freeze"/></rect><text x="830" y="175" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.33s">12%</text>
 <circle cx="36" cy="206" r="5" fill="#3572A5" class="l" style="animation-delay:0.36s"/>
 <text x="50" y="211" fill="#c9d1d9" class="l" style="animation-delay:0.36s">Python</text>
-<rect x="210" y="200" width="584" height="8" rx="4.0" fill="#21262d"/><rect x="210" y="200" width="0" height="8" rx="4.0" fill="#3572A5"><animate attributeName="width" from="0" to="70" begin="0.36s" dur="0.7s" fill="freeze"/></rect><text x="830" y="211" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.38s">12%</text>
+<rect x="210" y="200" width="584" height="8" rx="4.0" fill="#2a3140"/><rect x="210" y="200" width="0" height="8" rx="4.0" fill="#3572A5"><animate attributeName="width" from="0" to="70" begin="0.36s" dur="0.7s" fill="freeze"/></rect><text x="830" y="211" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.38s">12%</text>
 <circle cx="36" cy="242" r="5" fill="#00ADD8" class="l" style="animation-delay:0.41s"/>
 <text x="50" y="247" fill="#c9d1d9" class="l" style="animation-delay:0.41s">Go</text>
-<rect x="210" y="236" width="584" height="8" rx="4.0" fill="#21262d"/><rect x="210" y="236" width="0" height="8" rx="4.0" fill="#00ADD8"><animate attributeName="width" from="0" to="35" begin="0.41s" dur="0.7s" fill="freeze"/></rect><text x="830" y="247" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.43s">6%</text>
+<rect x="210" y="236" width="584" height="8" rx="4.0" fill="#2a3140"/><rect x="210" y="236" width="0" height="8" rx="4.0" fill="#00ADD8"><animate attributeName="width" from="0" to="35" begin="0.41s" dur="0.7s" fill="freeze"/></rect><text x="830" y="247" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.43s">6%</text>
 <circle cx="36" cy="278" r="5" fill="#b07219" class="l" style="animation-delay:0.46s"/>
 <text x="50" y="283" fill="#c9d1d9" class="l" style="animation-delay:0.46s">Java</text>
-<rect x="210" y="272" width="584" height="8" rx="4.0" fill="#21262d"/><rect x="210" y="272" width="0" height="8" rx="4.0" fill="#b07219"><animate attributeName="width" from="0" to="35" begin="0.46s" dur="0.7s" fill="freeze"/></rect><text x="830" y="283" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.48s">6%</text>
+<rect x="210" y="272" width="584" height="8" rx="4.0" fill="#2a3140"/><rect x="210" y="272" width="0" height="8" rx="4.0" fill="#b07219"><animate attributeName="width" from="0" to="35" begin="0.46s" dur="0.7s" fill="freeze"/></rect><text x="830" y="283" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.48s">6%</text>
 </svg>

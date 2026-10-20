@@ -16,6 +16,7 @@ Usage:
     python scripts/make_showcase.py
 """
 
+import base64
 import json
 import sys
 from pathlib import Path
@@ -37,10 +38,13 @@ LINE_H = 22
 MAX_CHARS = 66
 
 FONT_FAMILY = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
-BG = "#0d1117"
-TITLE_BG = "#161b22"
-BORDER = "#30363d"
-TRACK = "#21262d"
+# GitHub dark theme's page background is #0d1117 — cards use a lighter fill and
+# a strong border so the window edges stay visible on a profile page.
+BG = "#121822"
+TITLE_BG = "#1c2431"
+BORDER = "#3d444d"
+TRACK = "#2a3140"
+PANEL = "#0d1117"
 TITLE_TEXT = "#e6edf3"
 TEXT = "#c9d1d9"
 DIM = "#8b949e"
@@ -113,6 +117,32 @@ def timeago(days: int) -> str:
 
 def lang_color(lang: str | None) -> str:
     return LANG_COLORS.get(lang or "", DIM)
+
+
+def avatar_data_uri(url: str | None) -> str | None:
+    """Fetch the public avatar and inline it as base64.
+
+    SVGs render in an <img> context, where external resources are blocked —
+    a data: URI is the only way to ship a raster image inside the file (and it
+    removes any dependence on the client's monospace font metrics).
+    """
+    if not url:
+        return None
+    import requests
+
+    try:
+        response = requests.get(
+            url, params={"s": 220}, headers={"User-Agent": "amteamx-profile-art"},
+            timeout=20,
+        )
+        response.raise_for_status()
+        mime = response.headers.get("Content-Type", "image/png").split(";")[0]
+        if not mime.startswith("image/"):
+            return None
+        return f"data:{mime};base64,{base64.b64encode(response.content).decode()}"
+    except Exception as exc:
+        print(f"note: avatar fetch failed ({exc}); falling back to ascii")
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -214,7 +244,8 @@ class Card:
         total_h = TITLE_H + PAD + content_h + PAD
         out = [
             '<?xml version="1.0" encoding="UTF-8"?>\n',
-            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} '
+            f'<svg xmlns="http://www.w3.org/2000/svg" '
+            f'xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {WIDTH} '
             f'{total_h}" role="img" aria-label="{esc(self.cmd)} profile card">\n',
             "<style>"
             ".l{animation:fade-slide 0.4s ease both}"
@@ -229,7 +260,13 @@ class Card:
         out.append(
             f'<defs><clipPath id="win">'
             f'<rect width="{WIDTH}" height="{total_h}" rx="12"/>'
-            f"</clipPath></defs>\n"
+            f"</clipPath>"
+            # Green scanline sweep shared by the scan-card columns.
+            f'<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">'
+            f'<stop offset="0" stop-color="{GREEN}" stop-opacity="0"/>'
+            f'<stop offset="0.5" stop-color="{GREEN}" stop-opacity="0.45"/>'
+            f'<stop offset="1" stop-color="{GREEN}" stop-opacity="0"/>'
+            f"</linearGradient></defs>\n"
         )
         out.append(f'<g clip-path="url(#win)">\n')
         out.append(f'<rect width="{WIDTH}" height="{total_h}" fill="{BG}"/>\n')
@@ -277,10 +314,27 @@ def make_hero(profile: dict, contrib_total: int, active_days: int) -> str:
     card.t += STAGGER
     card.y += 52
 
-    card.text(PAD_X, f'@{HANDLE} · "{ALIAS}"', ACCENT, advance=24)
-    card.text(PAD_X, ROLE, TEXT, advance=22)
-    bio = profile.get("bio") or EDU
-    card.text(PAD_X, bio, DIM, advance=28)
+    # Inset panel so the identity lines read as boxed output, like the chips.
+    panel_y = card.y
+    panel_h = 4 * 24 + 24
+    card.raw(
+        f'<rect x="{PAD_X}" y="{TITLE_H + PAD + panel_y}" width="{WIDTH - 2 * PAD_X}" '
+        f'height="{panel_h}" rx="10" fill="{PANEL}" stroke="{BORDER}"/>'
+    )
+    card.y = panel_y + 12
+    card.text(PAD_X + 18, f'@{HANDLE} · "{ALIAS}"', ACCENT, advance=24)
+    card.text(PAD_X + 18, ROLE, TEXT, advance=24)
+    card.text(PAD_X + 18, EDU, DIM, advance=24)
+    card.text(
+        PAD_X + 18,
+        f"{profile['public_repos']} public repos · "
+        f"{contrib_total} contributions last year · "
+        f"{active_days} active days · ★ {profile['total_stars']}",
+        DIM,
+        size=14,
+        advance=24,
+    )
+    card.y = panel_y + panel_h + 14
 
     # Language chips from live repository weighting.
     x = PAD_X
@@ -297,23 +351,16 @@ def make_hero(profile: dict, contrib_total: int, active_days: int) -> str:
         x += chip_w + 10
     card.y += 34
 
-    card.text(
-        PAD_X,
-        f"{profile['public_repos']} public repos · "
-        f"{contrib_total} contributions last year · "
-        f"{active_days} active days · ★ {profile['total_stars']}",
-        DIM,
-        size=14,
-        advance=20,
-    )
     return card.render()
 
 
 def make_system_scan(profile: dict, contrib: dict) -> str:
-    grid = ascii_grid()
-    cols, rows = grid["cols"], grid["rows"]
-    cw, ch = grid["cell_w"], grid["cell_h"]
-    ascii_w, ascii_h = cols * cw, rows * ch
+    card = Card("./profile-scan --live")
+    uri = avatar_data_uri(profile.get("avatar_url"))
+    if uri:
+        col_w, content_h = _scan_avatar(card, uri)
+    else:
+        col_w, content_h = _scan_ascii(card)
 
     langs = " · ".join(e["language"] for e in profile["top_languages"][:4])
     name = profile.get("name") or NAME_FALLBACK
@@ -331,39 +378,13 @@ def make_system_scan(profile: dict, contrib: dict) -> str:
         ("Education", EDU),
         ("Contact", f"github.com/{HANDLE}"),
     ]
-
-    card = Card("./profile-scan --live")
-    content_h = max(ascii_h, len(stats) * 26)
-    row_delay = card.t
-
-    # ASCII portrait, one fading row at a time.
-    y0 = card._abs_y()
-    for i, row in enumerate(grid["grid"]):
-        baseline = y0 + i * ch + int(ch * 0.78)
-        card.buf.append(
-            f'<text x="{PAD_X}" y="{baseline}" font-size="{ch}" fill="{TEXT}" '
-            f'class="l" style="animation-delay:{row_delay + i * 0.03:.2f}s">'
-            f"{esc(row)}</text>\n"
-        )
-
-    # Scanline sweeping the portrait.
-    gy0, gy1 = y0 - 18, y0 + ascii_h
-    card.raw(
-        f'<defs><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">'
-        f'<stop offset="0" stop-color="{GREEN}" stop-opacity="0"/>'
-        f'<stop offset="0.5" stop-color="{GREEN}" stop-opacity="0.45"/>'
-        f'<stop offset="1" stop-color="{GREEN}" stop-opacity="0"/>'
-        f"</linearGradient></defs>"
-        f'<rect x="{PAD_X - 8}" y="{gy0}" width="{ascii_w + 16}" height="24" '
-        f'rx="12" fill="url(#scan)" opacity="0.6">'
-        f'<animate attributeName="y" values="{gy0};{gy1};{gy0}" '
-        f'dur="3.4s" repeatCount="indefinite"/></rect>'
-    )
+    content_h = max(content_h, len(stats) * 26)
 
     # Stats column.
     card.y = 8
-    label_x = PAD_X + ascii_w + 36
+    label_x = PAD_X + col_w + 36
     value_x = label_x + 142
+    row_delay = card.t
     for label, value in stats:
         baseline = card._abs_y() + int(FONT * 0.74)
         if label == "Status":
@@ -377,16 +398,71 @@ def make_system_scan(profile: dict, contrib: dict) -> str:
             )
         card.buf.append(
             f'<text x="{label_x}" y="{baseline}" fill="{ACCENT}" class="l" '
-            f'style="animation-delay:{card.t:.2f}s">{esc(label)}</text>\n'
+            f'style="animation-delay:{row_delay:.2f}s">{esc(label)}</text>\n'
             f'<text x="{value_x}" y="{baseline}" fill="{TEXT}" class="l" '
-            f'style="animation-delay:{card.t + 0.02:.2f}s">{esc(value)}</text>\n'
+            f'style="animation-delay:{row_delay + 0.02:.2f}s">{esc(value)}</text>\n'
         )
         card.y += 26
         card.t += STAGGER
+        row_delay = card.t
 
     # Pad the content so the taller column defines the card height.
     card.y = content_h
     return card.render()
+
+
+def _scan_avatar(card: Card, uri: str) -> tuple[int, int]:
+    """Draw the avatar with a scanning sweep; returns (column width, height)."""
+    size = 220
+    card.y = 8
+    av_y = card._abs_y()
+    card.raw(
+        f'<defs><clipPath id="av"><rect x="{PAD_X}" y="{av_y}" '
+        f'width="{size}" height="{size}" rx="14"/></clipPath></defs>'
+        f'<g clip-path="url(#av)">'
+        f'<image href="{uri}" xlink:href="{uri}" x="{PAD_X}" y="{av_y}" '
+        f'width="{size}" height="{size}" preserveAspectRatio="xMidYMid slice"/>'
+        f'<rect x="{PAD_X}" y="{av_y - 24}" width="{size}" height="24" '
+        f'rx="12" fill="url(#scan)" opacity="0.7">'
+        f'<animate attributeName="y" values="{av_y - 24};{av_y + size};'
+        f'{av_y - 24}" dur="3.4s" repeatCount="indefinite"/></rect>'
+        f"</g>"
+        f'<rect x="{PAD_X + 0.5}" y="{av_y + 0.5}" width="{size - 1}" '
+        f'height="{size - 1}" rx="14" fill="none" stroke="{BORDER}"/>'
+        f'<rect x="{PAD_X + 10}" y="{av_y + size - 32}" width="64" height="22" '
+        f'rx="11" fill="{PANEL}" stroke="{GREEN}"/>'
+        f'<text x="{PAD_X + 20}" y="{av_y + size - 17}" font-size="12" '
+        f'fill="{GREEN}">● LIVE</text>'
+    )
+    card.t += 0.3
+    return size, size + 16
+
+
+def _scan_ascii(card: Card) -> tuple[int, int]:
+    """Fallback: glyph portrait from the cached grid; returns (width, height)."""
+    grid = ascii_grid()
+    cols, rows = grid["cols"], grid["rows"]
+    cw, ch = grid["cell_w"], grid["cell_h"]
+    ascii_w, ascii_h = cols * cw, rows * ch
+
+    y0 = card._abs_y()
+    row_delay = card.t
+    for i, row in enumerate(grid["grid"]):
+        baseline = y0 + i * ch + int(ch * 0.78)
+        card.buf.append(
+            f'<text x="{PAD_X}" y="{baseline}" font-size="{ch}" fill="{TEXT}" '
+            f'class="l" style="animation-delay:{row_delay + i * 0.03:.2f}s">'
+            f"{esc(row)}</text>\n"
+        )
+    gy0, gy1 = y0 - 18, y0 + ascii_h
+    card.raw(
+        f'<rect x="{PAD_X - 8}" y="{gy0}" width="{ascii_w + 16}" height="24" '
+        f'rx="12" fill="url(#scan)" opacity="0.6">'
+        f'<animate attributeName="y" values="{gy0};{gy1};{gy0}" '
+        f'dur="3.4s" repeatCount="indefinite"/></rect>'
+    )
+    card.t += 0.3
+    return ascii_w, ascii_h
 
 
 def pick_projects(profile: dict) -> list[dict]:

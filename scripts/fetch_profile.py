@@ -132,6 +132,7 @@ def main() -> None:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "name": user.get("name"),
         "bio": user.get("bio"),
+        "avatar_url": user.get("avatar_url"),
         "followers": user.get("followers", 0),
         "public_repos": user.get("public_repos", len(repos)),
         "total_stars": sum(r["stargazers_count"] for r in repos),
