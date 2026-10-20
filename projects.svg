@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 364" role="img" aria-label="ls ~/repos --sort=recent profile card">
+<style>.l{animation:fade-slide 0.4s ease both}@keyframes fade-slide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
+<defs><clipPath id="win"><rect width="860" height="364" rx="12"/></clipPath></defs>
+<g clip-path="url(#win)">
+<rect width="860" height="364" fill="#0d1117"/>
+<rect width="860" height="40" fill="#161b22"/>
+<circle cx="24" cy="20" r="6" fill="#ff5f56"/>
+<circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
+<circle cx="64" cy="20" r="6" fill="#27c93f"/>
+<text x="430" y="25" text-anchor="middle" fill="#e6edf3" font-size="16">team@github ~ $ ls ~/repos --sort=recent</text>
+</g>
+<rect x="0.5" y="0.5" width="859" height="363" rx="12" fill="none" stroke="#30363d"/>
+<text x="30" y="75" fill="#79c0ff" class="l" style="animation-delay:0.16s">▸ my-stock</text>
+<text x="830" y="75" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.18s">TypeScript · ★ 0 · pushed 1d ago</text>
+<text x="42" y="97" font-size="15" fill="#8b949e" class="l" style="animation-delay:0.21s">no description provided</text>
+<rect x="30" y="106" width="754" height="6" rx="3.0" fill="#21262d"/><rect x="30" y="106" width="0" height="6" rx="3.0" fill="#3178c6"><animate attributeName="width" from="0" to="754" begin="0.26s" dur="0.7s" fill="freeze"/></rect><text x="830" y="114" text-anchor="end" font-size="12" fill="#8b949e" class="l" style="animation-delay:0.26s">100%</text>
+<text x="30" y="147" fill="#79c0ff" class="l" style="animation-delay:0.41s">▸ My-site</text>
+<text x="830" y="147" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.43s">JavaScript · ★ 0 · pushed 13d ago</text>
+<text x="42" y="169" font-size="15" fill="#8b949e" class="l" style="animation-delay:0.46s">no description provided</text>
+<rect x="30" y="178" width="754" height="6" rx="3.0" fill="#21262d"/><rect x="30" y="178" width="0" height="6" rx="3.0" fill="#f1e05a"><animate attributeName="width" from="0" to="731" begin="0.51s" dur="0.7s" fill="freeze"/></rect><text x="830" y="186" text-anchor="end" font-size="12" fill="#8b949e" class="l" style="animation-delay:0.51s">97%</text>
+<text x="30" y="219" fill="#79c0ff" class="l" style="animation-delay:0.66s">▸ vcat-app</text>
+<text x="830" y="219" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.68s">TypeScript · ★ 0 · pushed 2mo ago</text>
+<text x="42" y="241" font-size="15" fill="#8b949e" class="l" style="animation-delay:0.71s">no description provided</text>
+<rect x="30" y="250" width="754" height="6" rx="3.0" fill="#21262d"/><rect x="30" y="250" width="0" height="6" rx="3.0" fill="#3178c6"><animate attributeName="width" from="0" to="581" begin="0.76s" dur="0.7s" fill="freeze"/></rect><text x="830" y="258" text-anchor="end" font-size="12" fill="#8b949e" class="l" style="animation-delay:0.76s">77%</text>
+<text x="30" y="291" fill="#79c0ff" class="l" style="animation-delay:0.91s">▸ my-pdf-editor</text>
+<text x="830" y="291" text-anchor="end" font-size="13" fill="#8b949e" class="l" style="animation-delay:0.93s">Go · ★ 0 · pushed 3mo ago</text>
+<text x="42" y="313" font-size="15" fill="#8b949e" class="l" style="animation-delay:0.96s">no description provided</text>
+<rect x="30" y="322" width="754" height="6" rx="3.0" fill="#21262d"/><rect x="30" y="322" width="0" height="6" rx="3.0" fill="#00ADD8"><animate attributeName="width" from="0" to="558" begin="1.01s" dur="0.7s" fill="freeze"/></rect><text x="830" y="330" text-anchor="end" font-size="12" fill="#8b949e" class="l" style="animation-delay:1.01s">74%</text>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 374" role="img" aria-label="./profile-scan --live profile card">
+<style>.l{animation:fade-slide 0.4s ease both}@keyframes fade-slide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
+<defs><clipPath id="win"><rect width="860" height="374" rx="12"/></clipPath></defs>
+<g clip-path="url(#win)">
+<rect width="860" height="374" fill="#0d1117"/>
+<rect width="860" height="40" fill="#161b22"/>
+<circle cx="24" cy="20" r="6" fill="#ff5f56"/>
+<circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
+<circle cx="64" cy="20" r="6" fill="#27c93f"/>
+<text x="430" y="25" text-anchor="middle" fill="#e6edf3" font-size="16">team@github ~ $ ./profile-scan --live</text>
+</g>
+<rect x="0.5" y="0.5" width="859" height="373" rx="12" fill="none" stroke="#30363d"/>
+<text x="30" y="71" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.16s">                `-:.            </text>
+<text x="30" y="81" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.19s">          `-=+++cc***+:...      </text>
+<text x="30" y="91" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.22s">       `=+c***cc***cccccc*:.    </text>
+<text x="30" y="101" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.25s">     .-*sssccsccsss*cc****cc-   </text>
+<text x="30" y="111" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.28s">     =*ssssssss#sccs*csc*cccc.  </text>
+<text x="30" y="121" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.31s">    -c+*++cccs=:::`=scscssssc=. </text>
+<text x="30" y="131" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.34s">   =ss*c*+**sc::::::-+ccccs#ss- </text>
+<text x="30" y="141" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.37s">  .*cscscccs#+-:`:::``:-:`:*#*: </text>
+<text x="30" y="151" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.40s">   =sccc**cs+::=***c*+:``:=+c   </text>
+<text x="30" y="161" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.43s">   :ssssscs+=+*c++*css*==csc*:` </text>
+<text x="30" y="171" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.46s">    +s+*c#s***c*+c#==*ccc#c+=-+ </text>
+<text x="30" y="181" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.49s">    .+=+=+#=---*=-==-=s:-c==`.: </text>
+<text x="30" y="191" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.52s">    .=-+c-++=-`:=====+=::-+==`  </text>
+<text x="30" y="201" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.55s">     `+===-====::::--++*+**:=   </text>
+<text x="30" y="211" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.58s">      `*==+==-==--=-::==+===-   </text>
+<text x="30" y="221" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.61s">       =#sc==----=+**+===*==`   </text>
+<text x="30" y="231" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.64s">        -+=c==-:----=++=++=:    </text>
+<text x="30" y="241" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.67s">         =-+c**=-::::-=++-=     </text>
+<text x="30" y="251" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.70s">       .-+--+*ssc+=::``::=:     </text>
+<text x="30" y="261" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.73s">      .*#+=--=-+c##sc*+==:      </text>
+<text x="30" y="271" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.76s">     :*cs*--:=-:-=*cs#-         </text>
+<text x="30" y="281" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.79s">   `+ccccs+::-=::::-=+*`        </text>
+<text x="30" y="291" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.82s"> -**sc*cccs+-------=:cs*-.      </text>
+<text x="30" y="301" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.85s"> .=+sc**c*c#*===--::-scccc=`.   </text>
+<text x="30" y="311" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.88s">   .+c***c*cs=-=====+-*s*csc:   </text>
+<text x="30" y="321" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.91s">     `+cccc*cc:`::::``-sc+-.    </text>
+<text x="30" y="331" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.94s">       .`-+**c*:`::````-`       </text>
+<text x="30" y="341" font-size="10" fill="#c9d1d9" class="l" style="animation-delay:0.97s">            .`:`....            </text>
+<defs><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39d353" stop-opacity="0"/><stop offset="0.5" stop-color="#39d353" stop-opacity="0.45"/><stop offset="1" stop-color="#39d353" stop-opacity="0"/></linearGradient></defs><rect x="22" y="46" width="208" height="24" rx="12" fill="url(#scan)" opacity="0.6"><animate attributeName="y" values="46;344;46" dur="3.4s" repeatCount="indefinite"/></rect><text x="258" y="83" fill="#79c0ff" class="l" style="animation-delay:0.16s">Subject</text>
+<text x="400" y="83" fill="#c9d1d9" class="l" style="animation-delay:0.18s">PWTeam</text>
+<text x="258" y="109" fill="#79c0ff" class="l" style="animation-delay:0.21s">Handle</text>
+<text x="400" y="109" fill="#c9d1d9" class="l" style="animation-delay:0.23s">@AmTeamX</text>
+<text x="258" y="135" fill="#79c0ff" class="l" style="animation-delay:0.26s">Role</text>
+<text x="400" y="135" fill="#c9d1d9" class="l" style="animation-delay:0.28s">Software Engineer AI Intern @ Omise</text>
+<circle cx="384" cy="156" r="3.5" fill="#39d353"><animate attributeName="r" values="3;5;3" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;1;0.6" dur="1.6s" repeatCount="indefinite"/></circle><text x="258" y="161" fill="#79c0ff" class="l" style="animation-delay:0.31s">Status</text>
+<text x="400" y="161" fill="#c9d1d9" class="l" style="animation-delay:0.33s">Building · Learning · Shipping</text>
+<text x="258" y="187" fill="#79c0ff" class="l" style="animation-delay:0.36s">Languages</text>
+<text x="400" y="187" fill="#c9d1d9" class="l" style="animation-delay:0.38s">TypeScript · JavaScript · Dart · Python</text>
+<text x="258" y="213" fill="#79c0ff" class="l" style="animation-delay:0.41s">Repositories</text>
+<text x="400" y="213" fill="#c9d1d9" class="l" style="animation-delay:0.43s">22 public</text>
+<text x="258" y="239" fill="#79c0ff" class="l" style="animation-delay:0.46s">Contributions</text>
+<text x="400" y="239" fill="#c9d1d9" class="l" style="animation-delay:0.48s">733 in the last year</text>
+<text x="258" y="265" fill="#79c0ff" class="l" style="animation-delay:0.51s">Active Days</text>
+<text x="400" y="265" fill="#c9d1d9" class="l" style="animation-delay:0.53s">144 of 365</text>
+<text x="258" y="291" fill="#79c0ff" class="l" style="animation-delay:0.56s">Stars</text>
+<text x="400" y="291" fill="#c9d1d9" class="l" style="animation-delay:0.58s">0 · 2 followers</text>
+<text x="258" y="317" fill="#79c0ff" class="l" style="animation-delay:0.61s">Education</text>
+<text x="400" y="317" fill="#c9d1d9" class="l" style="animation-delay:0.63s">ICT @ Mahidol University</text>
+<text x="258" y="343" fill="#79c0ff" class="l" style="animation-delay:0.66s">Contact</text>
+<text x="400" y="343" fill="#c9d1d9" class="l" style="animation-delay:0.68s">github.com/AmTeamX</text>
+</svg>
