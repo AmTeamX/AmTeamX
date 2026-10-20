@@ -13,4 +13,3 @@ source-prepped.png
 
 # onnxruntime telemetry artifact (can appear when run sandboxed)
 :memory:.ses
-.DS_Store
