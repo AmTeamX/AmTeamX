@@ -1,24 +1,22 @@
-<div align="center">
+<p align="center">
+<img src="https://www.gitskins.com/api/section/hero?username=amteamx&theme=github-dark&style=aura&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F104099976%3Fu%3D47285fbcc5139357c8cad9ead44b5b6f352b3e14%26v%3D4&v=showcase-hero-1" alt="PWTeam hero visual" />
+</p>
 
-<img src="./hero.svg" width="860" alt="whoami — PWTeam" />
+<p align="center">
+<img src="https://www.gitskins.com/api/section/system-scan?username=amteamx&theme=github-dark&style=aura&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F104099976%3Fu%3D47285fbcc5139357c8cad9ead44b5b6f352b3e14%26v%3D4&v=showcase-system-scan-2" alt="PWTeam system-scan visual" />
+</p>
 
-<br>
+<p align="center">
+<img src="https://www.gitskins.com/api/section/projects?username=amteamx&theme=github-dark&style=aura&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F104099976%3Fu%3D47285fbcc5139357c8cad9ead44b5b6f352b3e14%26v%3D4&v=showcase-projects-3" alt="PWTeam projects visual" />
+</p>
 
-<img src="./system-scan.svg" width="860" alt="Live profile scan — ASCII portrait and stats" />
+<p align="center">
+<img src="https://www.gitskins.com/api/section/stack?username=amteamx&theme=github-dark&style=aura&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F104099976%3Fu%3D47285fbcc5139357c8cad9ead44b5b6f352b3e14%26v%3D4&v=showcase-stack-4" alt="PWTeam stack visual" />
+</p>
 
-<br>
-
-<img src="./projects.svg" width="860" alt="Recent repositories" />
-
-<br>
-
-<img src="./stack.svg" width="860" alt="Language stack" />
-
-<br>
-
-<img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap" />
-
-</div>
+<p align="center">
+<img src="https://www.gitskins.com/api/section/heatmap?username=amteamx&theme=github-dark&style=aura&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F104099976%3Fu%3D47285fbcc5139357c8cad9ead44b5b6f352b3e14%26v%3D4&v=showcase-heatmap-5" alt="PWTeam heatmap visual" />
+</p>
 
 <br>
 

@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  art:
+  heatmap:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,14 +20,8 @@ jobs:
           python-version: "3.11"
       - run: pip install -r scripts/requirements-ci.txt
       - run: python scripts/fetch_contributions.py
-      - run: python scripts/fetch_profile.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # free, avoids API rate limits
       - run: python scripts/render_heatmap_svg.py
-      - run: python scripts/make_showcase.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: >-
-            data/contributions.json data/profile.json data/ascii-portrait.json
-            contrib-heatmap.svg hero.svg system-scan.svg projects.svg stack.svg
+          commit_message: "chore: refresh contribution graph [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg"
